@@ -15,7 +15,6 @@ public class pattern19 {
 			for( int j =1; j<=i; j++) {
 				System.out.print(m+" ");
 				m++;
-			
 			}
 			System.out.println();
 		}
