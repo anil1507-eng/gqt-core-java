@@ -52,7 +52,7 @@ public class Alphabets {
 			
 			//C
 			for(int j=0; j<n; j++) {
-				if(i==0 || i==n-1 || j==0  ) {
+				if(i==0 && j!=0 || i==n-1 && j!=0 || j==0 && i!=0  && i!=n-1) {
 					System.out.print("* ");
 				}
 				else {
@@ -103,7 +103,7 @@ public class Alphabets {
 			
 			//G
 			for(int j=0; j<n; j++) {
-				if(i==0 || j==0 || i==n-1 && j<=n/2 || j == n/2 && i>=5 || i==n/2 && j>=5 || j==n-1 && i>=5 ) {
+				if(i==0 || j==0 || i==n-1 && j<=n/2 || j == n/2 && i>=n/2 || i==n/2 && j>=n/2 || j==n-1 && i>=n/2 ) {
 					System.out.print("* ");
 				}
 				else {
@@ -143,7 +143,7 @@ public class Alphabets {
 			
 			//J
 			for(int j=0; j<n; j++) {
-				if( i==0 || i==n-1 && j<=5 || j==n/2 || j==0 && i>=5 ) {
+				if( i==0 || i==n-1 && j<=n/2 || j==n/2 || j==0 && i>=n/2 ) {
 					System.out.print("* ");
 				}
 				else {
@@ -401,7 +401,7 @@ public class Alphabets {
 			
 			//2
 			for(int j=0; j<n; j++) {
-				if( i==0 || i == n-1 || j == n-1 && i<=n/2 || i == n/2 || j ==0 && i>=5) {
+				if( i==0 || i == n-1 || j == n-1 && i<=n/2 || i == n/2 || j ==0 && i>=n/2) {
 					System.out.print("* ");
 				}
 				else {
@@ -438,7 +438,7 @@ public class Alphabets {
 			
 			//5
 			for(int j=0; j<n; j++) {
-				if( j ==0 && i<=n/2 || i ==0 || i == n/2 && j<=n-2 || j == n-1 && i >5 && i<n-1 || i == n-1 && j!=n-1) {
+				if( j ==0 && i<=n/2 || i ==0 || i == n/2 && j<=n-2 || j == n-1 && i>n/2 && i<n-1 || i == n-1 && j!=n-1) {
 					System.out.print("* ");
 				}
 				else {
@@ -451,7 +451,7 @@ public class Alphabets {
 			
 			//6
 			for(int j=0; j<n; j++) {
-				if( j ==0 && i!=n-1 && i !=0 || i ==0 && j<n-1 && j!=0  || i == n/2 && j<=n-2 || j == n-1 && i>5 && i<n-1 && i!=0 || i == n-1 && j!=n-1 && j>0) {
+				if( j ==0 && i!=n-1 && i !=0 || i ==0 && j<n-1 && j!=0  || i == n/2 && j<=n-2 || j == n-1 && i>n/2 && i<n-1 && i!=0 || i == n-1 && j!=n-1 && j>0) {
 					System.out.print("* ");
 				}
 				else {
@@ -490,7 +490,7 @@ public class Alphabets {
 			
 			//9
 			for(int j=0; j<n; j++) {
-				if( i==0 && j!=0 && j!=n-1 || j==0 && i>0 && i<5 && i!=n-1 || i == n/2 && j>0 && j!=n-1 || j == n-1 && i!=n/2 && i!=0 && i!=n-1 || i==n-1 && j!=n-1 && j!=0) {
+				if( i==0 && j!=0 && j!=n-1 || j==0 && i>0 && i<n/2 && i!=n-1 || i == n/2 && j>0 && j!=n-1 || j == n-1 && i!=n/2 && i!=0 && i!=n-1 || i==n-1 && j!=n-1 && j!=0) {
 					System.out.print("* ");
 				}
 				else {

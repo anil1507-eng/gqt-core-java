@@ -37,7 +37,7 @@ public class Feedback {
 			
 			//P
 			for(int j=0; j<n; j++) {
-				if( j==0|| i ==0 && j<n-1 || j == n-1 && i<5 && i>0 || i == n/2 && j<n-1 ) {
+				if( j==0|| i == 0 && j<n-1 || j == n-1 && i<n/2 && i>0 || i == n/2 && j<n-1 ) {
 					System.out.print("* ");
 				}
 				else {
@@ -49,7 +49,7 @@ public class Feedback {
 			
 			//P
 			for(int j=0; j<n; j++) {
-				if( j==0|| i ==0 && j<n-1 || j == n-1 && i<5 && i>0 || i == n/2 && j<n-1 ) {
+				if( j==0|| i ==0 && j<n-1 || j == n-1 && i<n/2 && i>0 || i == n/2 && j<n-1 ) {
 					System.out.print("* ");
 				}
 				else {
@@ -61,7 +61,7 @@ public class Feedback {
 			
 			//R
 			for(int j=0; j<n; j++) {
-				if( j==0|| i ==0 && j<n-1 || j == n-1 && i<5 && i>0 || i == n/2 && j<n-1 || i==j && j>=5 && i >=5 ) {
+				if( j==0|| i ==0 && j<n-1 || j == n-1 && i<n/2 && i>0 || i == n/2 && j<n-1 || i==j && j>=n/2 && i >=n/2 ) {
 					System.out.print("* ");
 				}
 				else {
@@ -86,7 +86,7 @@ public class Feedback {
 			
 			//C
 			for(int j=0; j<n; j++) {
-				if(i==0 || i==n-1 || j==0  ) {
+				if(i==0 && j!=0 || i==n-1 && j!=0 || j==0 && i!=0  && i!=n-1) {
 					System.out.print("* ");
 				}
 				else {
@@ -194,7 +194,7 @@ public class Feedback {
 			
 			//G
 			for(int j=0; j<n; j++) {
-				if(i==0 || j==0 || i==n-1 && j<=n/2 || j == n/2 && i>=5 || i==n/2 && j>=5 || j==n-1 && i>=5 ) {
+				if(i==0 || j==0 || i==n-1 && j<=n/2 || j == n/2 && i>=n/2 || i==n/2 && j>=n/2 || j==n-1 && i>=n/2 ) {
 					System.out.print("* ");
 				}
 				else {
@@ -265,7 +265,7 @@ public class Feedback {
 			
 			//C
 			for(int j=0; j<n; j++) {
-				if(i==0 || i==n-1 || j==0  ) {
+				if(i==0 && j!=0 || i==n-1 && j!=0 || j==0 && i!=0  && i!=n-1) {
 					System.out.print("* ");
 				}
 				else {
