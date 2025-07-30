@@ -6,7 +6,7 @@ public class ArrayCode1 {
 
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the Array Size: ");
+		System.out.print("Enter the S Size: ");
 		int n = sc.nextInt();
 		
 		//Creating an array

@@ -290,7 +290,7 @@ public class Feedback {
 			
 			System.out.println();
 		}
-
+		sc.close();
 	}
 
 }
